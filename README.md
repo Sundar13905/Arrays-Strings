@@ -308,10 +308,11 @@ int main()
 }
 ~~~
 
-## CODE OUTPUR 
+## CODE OUTPUT
 ![String_output](https://github.com/Sundar13905/Arrays-Strings/blob/main/String_output.png)
 
-
+## CONCLUSION: -
+In this experiment we learnt how to implement string and its operations like sorting, searching, etc.
 
 
 
