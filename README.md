@@ -1,11 +1,11 @@
-# Arrays and Strings in C++
+# ARRAYS AND STRINGS IN C++
 
-# Experiment 7
+# EXPERIMENT 7 ARRAYS
 
-## Aim
-To study and implement C++ Arrays and Strings
+## AIM
+To study and implement C++ Arrays 
 
-## Theory
+## THEORY
 
 In computer science, an array is a data structure consisting of a collection of elements (values or variables), of same memory size, each identified by at least one array index or key.
 Arrays have continous memory allocation
@@ -66,7 +66,7 @@ vector<int> v;
 ~~~
 
 
-## Code
+## CODE
 
 ~~~
 #include <iostream>
@@ -200,6 +200,113 @@ int main()
 }
 ~~~
 
+## CODE OUTPUT
+![Array_code_output](https://github.com/Sundar13905/Arrays-Strings/blob/main/Arrays_Output.png)
+
+## CONCLUSION
+
+We learnt how to implement arrays and its operations in C++ programming languages
+
+
+----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
+
+
+# EXPERIMENT 7 STRINGS 
+
+## AIM
+
+To study and implement C++ strings
+
+## THEORY
+
+A string is a datatype having a sequence of characters used to represent text. Strings are commonly used for storing and manipulating textual data in computer programs. They can be manipulated using various operations like concatenation, substring extraction, and comparison.
+
+In most programming languages, strings are treated as a distinct data type. This means that strings have their own set of operations and properties. They can be declared and manipulated using specific string-related functions and methods.
+
+### Application of strings
+
+1. Hashing and encryption of data: - Random strings are generated to secure data or encrypt data
+2. Data representation
+3. Database operation
+4. Web developmenent
+
+### Operations of strings: -
+1. Find the length of a string 
+2. Accessing Characters	from a string using its indexing value
+3. Concating or merging of 2 strings 
+4. Appending and Concatenating Strings	
+5. comparing 2 strings
+6. Making substrings	
+6. Searching a character from a string  
+7. replacing a character or substring from the orignal string 
+8. inserting a character into a string
+9. deleting or erasing a character from a string 
+10. Coversion to obtain a C_type string (character array)
+
+
+The above operations can be directly accessed in C++ programming language that has been stored in String header file for example __length()__ to find the length of a string, __at()__, __append()__ , __compare()__ , __substring()__ , find(), etc.
+
+## CODE
+~~~
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+    string a;
+    cout<<"Enter any string"<<endl;
+    cin>> a;
+    cout<<"The entered string is: "<<a<<endl;
+
+    cout<<"-----------------"<<endl;
+
+    cout<<"Concatenation of 2 strings: "<<endl;
+    cout<<"\nEnter 2 strings to concatenate: "<<endl;
+    string str1,str2,str3,str4;
+    cin>> str1>> str2;
+    cout<<"\nConcatenation of the 2 strings: "<<str1+str2<<endl;
+
+    cout<<"-------------------"<<endl;
+    cout<<"\nReversing a string"<<endl;
+    cout<<"\nEnter a string to reverse"<<endl;
+    cin>> str3;
+    for(int i = str3.length()-1;i>=0;i--)
+    {
+        cout<<str3[i];
+    }
+
+    cout<<"\n-------------------------"<<endl;
+    cout<<"\nTo check whether the given string is a Palindrome"<<endl;
+    cout<<"Enter a string to check whether a given string is a Palindrome"<<endl;
+    cin>>str4;
+    int len = str4.length();
+    bool flag = true;
+    for (int i = 0; i < len / 2; i++)
+    {
+        if (str4[i] != str4[len - 1 - i])
+        {
+            flag = false;
+            break;
+        }
+    }
+
+    if(flag)
+    {
+        cout<<"The given string is  a palindrome"<<endl;
+    }
+    else 
+    {
+        cout<<"The given string is not a palindrome"<<endl;
+    }
+
+
+    return 0;
+}
+~~~
 
 
 
