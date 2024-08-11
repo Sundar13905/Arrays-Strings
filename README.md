@@ -308,6 +308,9 @@ int main()
 }
 ~~~
 
+## CODE OUTPUR 
+![String_output](https://github.com/Sundar13905/Arrays-Strings/blob/main/String_output.png)
+
 
 
 
